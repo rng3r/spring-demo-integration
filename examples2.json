@@ -1,0 +1,6 @@
+[
+  { "uuid": "604667fe-d8d2-4e3c-b792-a716d650c3d4", "action": "concat", "payload": { "fieldA": "abc", "fieldB": "def"} },
+  { "uuid": "604667fe-d8d2-4e3c-b792-a716d650c3d4", "action": "join", "payload": { "fieldA": "abc", "fieldB": "def"} },
+  { "uuid": "604667fe-d8d2-4e3c-b792-a716d650c3d4", "action": "add", "payload": { "firstNumber": 2, "secondNumber": 3, "thirdNumber": 4 } },
+  { "uuid": "604667fe-d8d2-4e3c-b792-a716d650c3d4", "action": "multiply", "payload": { "firstNumber": 2, "secondNumber": 3, "thirdNumber": 4 } },
+]

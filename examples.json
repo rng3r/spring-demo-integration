@@ -1,0 +1,4 @@
+[
+  { "uuid": "3378d711-e27e-4340-a53d-1fd0848780c8", "action": "multiply", "request": { "firstNumber": 2, "secondNumber": 3, "thirdNumber": 4 }, "response": null },
+  { "uuid": "604667fe-d8d2-4e3c-b792-a716d650c3d4", "action": "add", "request": { "firstNumber": 2, "secondNumber": 3, "thirdNumber": 4 }, "response": null }
+]
