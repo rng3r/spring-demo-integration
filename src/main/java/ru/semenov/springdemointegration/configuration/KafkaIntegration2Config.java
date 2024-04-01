@@ -148,6 +148,7 @@ public class KafkaIntegration2Config {
   public IntegrationFlow concatProcessFlow() {
     return IntegrationFlow.from(aServiceConcatInputRawChannel())
         .transform(Transformers.fromMap(AServiceConcatRequestDto.class))
+        .log()
         .channel(concatChannel())
         .get();
   }
@@ -166,6 +167,7 @@ public class KafkaIntegration2Config {
   public IntegrationFlow joinProcessFlow() {
     return IntegrationFlow.from(aServiceJoinInputRawChannel())
         .transform(Transformers.fromMap(AServiceJoinRequestDto.class))
+        .log()
         .channel(joinChannel())
         .get();
   }
@@ -184,6 +186,7 @@ public class KafkaIntegration2Config {
   public IntegrationFlow addProcessFlow() {
     return IntegrationFlow.from(bServiceAddInputRawChannel())
         .transform(Transformers.fromMap(BServiceAddRequestDto.class))
+        .log()
         .channel(addChannel())
         .get();
   }
@@ -203,6 +206,7 @@ public class KafkaIntegration2Config {
   public IntegrationFlow multiplyProcessFlow() {
     return IntegrationFlow.from(bServiceMultiplyInputChannel())
         .transform(Transformers.fromMap(BServiceMultiplyRequestDto.class))
+        .log()
         .channel(multiplyChannel())
         .get();
   }
